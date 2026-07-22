@@ -1,0 +1,18 @@
+dto
+│"What information should the client be allowed to send for this API?"
+├── request
+│     ├── CreateOrderRequestDto -- place order
+│     ├── UpdateOrderRequestDto --- updateable things
+│     ├── CreateOrderItemRequestDto --- place order , choose item - orderItem entites- feild like - we have all the private feilds like thosse should not send by sender user should only send quantity and name
+│
+└── response
+      ├── OrderResponseDto ------ we can do magic here we have controle what to send to user
+      ├── OrderItemResponseDto --- same
+      └── OrderDetailsResponseDto --- same
+
+      those DTOS and some APIS order-service will be done
+      we dont have as much in product service
+      user service is kinda simple - just auth is hard
+      and auth service will contain validation and authentication like entry point
+      later gateway remains -
+      we will choose - inbuilt redis/loadbalncer - or build
